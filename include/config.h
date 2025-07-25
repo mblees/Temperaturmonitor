@@ -12,7 +12,7 @@
 
 // WIFI Configuration
 #define ENABLE_WIFI true
-#define WIFI_SSID "EmRoLab-ng" // Replace with your WiFi SSID
-#define WIFI_PASSWORD "#HTWdS5307%_" // Replace with your WiFi password
+#define WIFI_SSID "KGB" // Replace with your WiFi SSID
+#define WIFI_PASSWORD "cLCXBX3hugb36tbD" // Replace with your WiFi password
 
 #endif // CONFIG_H
