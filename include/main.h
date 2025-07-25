@@ -6,5 +6,6 @@
 
 #include "_wifi.h"
 #include "_timer.h"
+#include "bme280.h"
 
 #endif // MAIN_H

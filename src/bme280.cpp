@@ -3,7 +3,10 @@
 BME280Sensor::BME280Sensor() : initialized(false) {}
 
 bool BME280Sensor::begin(uint8_t address) {
-    initialized = bme.begin(address);
+    Wire1.setSDA(SDA_PIN);
+    Wire1.setSCL(SCL_PIN);
+    Wire1.begin();
+    initialized = bme.begin(address, &Wire1);
     return initialized;
 }
 
@@ -22,7 +25,3 @@ float BME280Sensor::getPressure() {
     return bme.readPressure();
 }
 
-float BME280Sensor::getAltitude(float seaLevelhPa) {
-    if (!initialized) return NAN;
-    return bme.readAltitude(seaLevelhPa);
-}

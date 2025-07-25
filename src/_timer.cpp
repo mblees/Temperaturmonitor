@@ -50,7 +50,6 @@ bool init_timer(uint8_t timerNo, uint32_t interval_ms)
 */
 bool ITimer0_callback(struct repeating_timer *t)
 {
-    Serial.println("Timer 0 callback");
     timer0_flag = true;
     return true;
 }

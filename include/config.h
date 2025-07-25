@@ -15,4 +15,9 @@
 #define WIFI_SSID "KGB" // Replace with your WiFi SSID
 #define WIFI_PASSWORD "cLCXBX3hugb36tbD" // Replace with your WiFi password
 
+// BME280 Sensor Configuration
+#define BME280_ADRS 0x76 // Default I2C address for BME280
+#define SDA_PIN 2
+#define SCL_PIN 3
+
 #endif // CONFIG_H
